@@ -1,0 +1,107 @@
+﻿{
+  "example": {
+    "work": [
+      {
+        "id": 1,
+        "arrival": 0,
+        "execution": 3,
+        "duetime": 4,
+        "succesors": [
+          { "id": 3 }
+        ]
+      },
+      {
+        "id": 2,
+        "arrival": 4,
+        "execution": 2,
+        "duetime": 6,
+        "succesors": [
+          { "id": 4 }
+        ]
+      },
+      {
+        "id": 3,
+        "arrival": 2,
+        "execution": 2,
+        "duetime": 8,
+        "succesors": [
+          { "id": 5 }
+        ],
+        "predecesors": [
+          { "id": 1 }
+        ]
+      },
+      {
+        "id": 4,
+        "arrival": 5,
+        "execution": 1,
+        "duetime": 15,
+        "succesors": [
+          { "id": 5 },
+          { "id": 6 }
+        ],
+        "predecesors": [
+          { "id": 2 }
+        ]
+      },
+      {
+        "id": 5,
+        "arrival": 6,
+        "execution": 4,
+        "duetime": 10,
+        "succesors": [
+          { "id": 7 }
+        ],
+        "predecesors": [
+          { "id": 3 },
+          { "id": 4 }
+        ]
+      },
+      {
+        "id": 6,
+        "arrival": 15,
+        "execution": 1,
+        "duetime": 20,
+        "succesors": [
+          { "id": 7 }
+        ],
+        "predecesors": [
+          { "id": 4 }
+        ]
+      },
+      {
+        "id": 7,
+        "arrival": 13,
+        "execution": 2,
+        "duetime": 25,
+        "predecesors": [
+          { "id": 5 },
+          { "id": 6 }
+        ]
+      }
+    ]
+  }}
+
+/*
+  {"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}
+The same text expressed as XML:
+
+<menu id="file" value="File">
+  <popup>
+    <menuitem value="New" onclick="CreateNewDoc()" />
+    <menuitem value="Open" onclick="OpenDoc()" />
+    <menuitem value="Close" onclick="CloseDoc()" />
+  </popup>
+</menu>
+
+*/
